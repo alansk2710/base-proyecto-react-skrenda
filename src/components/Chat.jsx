@@ -74,6 +74,11 @@ export default function Chat() {
               <option value="">Claro</option>
               <option value="">Oscuro</option>
             </select><br></br>
+            <h3>Cambiar idioma:</h3>
+            <select name="" id="">
+              <option value="">Español</option>
+              <option value="">Inglés</option>
+            </select><br></br>
             <button onClick={handleClosePopup}>Cerrar</button>
           </div>
         </section>
