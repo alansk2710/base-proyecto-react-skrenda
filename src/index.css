@@ -293,4 +293,28 @@ form .text-info {
   .popup {
     width: 80%;
   }
+
+  .help-container {
+    padding: 1rem;
+  }
+
+  .help-container h1 {
+    font-size: 1.4rem;
+  }
+
+  .help-container h2 {
+    font-size: 1.1rem;
+  }
+
+  .help-container p,
+  .help-container ul {
+    font-size: 0.95rem;
+  }
+
+  .help-back-button {
+    width: 100%;
+    text-align: center;
+    padding: 0.8rem;
+    font-size: 1rem;
+  }
 }
