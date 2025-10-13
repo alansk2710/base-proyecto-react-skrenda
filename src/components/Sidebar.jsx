@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import { useChat } from "../context/ChatContext"
+import avatar from "../assets/avatar.png"
 
 export default function Sidebar() {
   const { users, setSelectedUser } = useChat()
@@ -41,7 +42,7 @@ export default function Sidebar() {
           >
             <img
               className="avatar"
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4YreOWfDX3kK-QLAbAL4ufCPc84ol2MA8Xg&s"
+              src={avatar}
               alt={user.name}
             />
             <div className="user-info">

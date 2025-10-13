@@ -1,5 +1,6 @@
 import { createContext, useContext, useState, useEffect } from "react"
 
+
 const ChatContext = createContext()
 
 const ChatProvider = ({ children }) => {
@@ -22,7 +23,7 @@ const ChatProvider = ({ children }) => {
       const initialUsers = [
         {
           id: 1,
-          name: "Juan perez",
+          name: "Santiago Mendez",
           status: "online",
           lastSeen: "",
           messages: [
@@ -31,9 +32,9 @@ const ChatProvider = ({ children }) => {
         },
         {
           id: 2,
-          name: "Marita Rodriguez",
+          name: "Martin Rios",
           status: "offline",
-          lastSeen: "3 hours ago",
+          lastSeen: "1 hours ago",
           messages: [
             { id: 1, text: "RESPONDEEEE QUE TENGO HAMBREE!", time: "15:00" },
             { id: 2, text: "estoy desde las 12 en el banco!!", time: "15:10" },
