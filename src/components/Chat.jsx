@@ -98,11 +98,16 @@ export default function Chat() {
           </div>
 
           <div className="chat-actions">
-            <button title="Camera">📷</button>
-            <button title="Gallery">🖼️</button>
-            <button title="Settings" onClick={handleShowPopup}>⚙️</button>
-            <Link to="/help" title="Help">❓</Link>
-            <button onClick={handleLogout}>Cerrar sesión</button>
+            <div className="chat-media">
+              <button title="Camera">📷</button>
+              <button title="Gallery">🖼️</button>
+              <button title="Settings" onClick={handleShowPopup}>⚙️</button>
+              <Link to="/help" title="Help">❓</Link>
+            </div>
+            <div className="chat-logout">
+              <button title="Log out" onClick={handleLogout}>🔒Log out</button>
+            </div>
+
           </div>
         </header>
 
