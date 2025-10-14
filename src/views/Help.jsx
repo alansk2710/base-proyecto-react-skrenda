@@ -28,14 +28,14 @@ const Help = () => {
       <section>
         <h2> Posibles Mejoras Futuras</h2>
         <ul>
-          <li>Comunicació entre dos usuarios en tiempo real</li>
+          <li>Comunicación entre dos usuarios en tiempo real</li>
           <li>Autenticación de usuarios con JWT</li>
           <li>Enviar fotos estre chats</li>
           <li>Personalización de temas</li>
         </ul>
       </section>
       <section className="help-navigation">
-        <Link to="/chat" className="help-back-button">← Volver al chat</Link>
+        <Link to="/chat"><button className="btn-go-chat">← Volver al chat</button></Link>
       </section>
     </div>
   );
