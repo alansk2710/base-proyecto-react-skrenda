@@ -17,7 +17,7 @@ const ChatProvider = ({ children }) => {
   useEffect(() => {
     const storedUsers = localStorage.getItem("users")
 
-    if (storedUsers == null) {
+    if (storedUsers !== null) {
       setUsers(JSON.parse(storedUsers))
     } else {
       const initialUsers = [
@@ -36,28 +36,28 @@ const ChatProvider = ({ children }) => {
           status: "offline",
           lastSeen: "1 hours ago",
           messages: [
-            { id: 1, text: "RESPONDEEEE QUE TENGO HAMBREE!", time: "15:00" },
-            { id: 2, text: "estoy desde las 12 en el banco!!", time: "15:10" },
-            { id: 3, text: "ahora voy a casa, llevo empanadas :)", time: "20:00" }
+            { id: 1, text: "Buenas, perdona que te moleste", time: "15:00" },
+            { id: 2, text: "Necesitaria saber un presupuesto para arreglar la moto", time: "15:10" },
+            { id: 3, text: "No regula bien y necesitaria hacerle un cambio de aceite", time: "15:20" }
           ]
         },
         {
           id: 3,
-          name: "Luka Nicolas Piaggi",
+          name: "Daiana Benitez",
           status: "online",
           lastSeen: "",
           messages: [
-            { id: 1, text: "Me encanta programación!!", time: "19:00" },
-            { id: 2, text: "El profe es un capo!!!!!", time: "19:01" }
+            { id: 1, text: "Buenas", time: "19:00" },
+            { id: 2, text: "Estas en tu casa?", time: "19:01" }
           ]
         },
         {
           id: 4,
-          name: "Lucas Hernan Figueroa",
+          name: "Raul Gonzalez Blanco",
           status: "offline",
           lastSeen: "1 minute ago",
           messages: [
-            { id: 1, text: "Estoy en programación, después te mando...", time: "18:59" }
+            { id: 1, text: "Estoy ocupado haciendo un trabajo, después te mando...", time: "18:59" }
           ]
         }
       ]

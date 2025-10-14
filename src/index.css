@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  */box-sizing: border-box;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -254,6 +254,15 @@
   background-color: #0056b3;
 }
 
+.btn-go-chat:hover {
+  background-color: #0056b3;
+}
+
+.btn-notfound:hover {
+  background-color: #0056b3;
+}
+
+
 
 form button:hover {
   background-color: #0056b3;
@@ -342,8 +351,6 @@ form .text-info {
   color: white;
   font-size: 13px;
   cursor: pointer;
-  transition: background-color 0.3s;
-
 }
 
 .err-404 {
@@ -353,15 +360,31 @@ form .text-info {
   align-items: center;
 }
 
-.sect-notfound h1,
-p {
-  max-width: 500px;
+.sect-notfound h1 {
+  max-width: 400px;
   margin: 0 auto;
   display: flex;
   align-items: center;
+}
 
+.btn-notfound {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  margin-top: 5px;
+  border-color: white;
+  margin-top: 2px;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
 
 }
+
+
+
 
 
 /* Resposive mínimo para mobile */
