@@ -17,7 +17,7 @@ const ChatProvider = ({ children }) => {
   useEffect(() => {
     const storedUsers = localStorage.getItem("users")
 
-    if (storedUsers !== null) {
+    if (storedUsers == null) {
       setUsers(JSON.parse(storedUsers))
     } else {
       const initialUsers = [
@@ -27,7 +27,7 @@ const ChatProvider = ({ children }) => {
           status: "online",
           lastSeen: "",
           messages: [
-            { id: 1, text: "Hola, como estas?", time: "00:40" }
+            { id: 1, text: "Hola, como estas?", time: "01:40" }
           ]
         },
         {

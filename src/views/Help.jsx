@@ -5,7 +5,7 @@ import { Link } from "react-router-dom"
 const Help = () => {
   return (
     <div className="help-container">
-      <h1> Ayuda </h1>
+      <h1> Centro de Ayuda </h1>
 
       <section>
         <h2> Funcionamiento General del Chat</h2>
